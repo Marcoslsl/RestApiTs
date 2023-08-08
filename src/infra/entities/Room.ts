@@ -11,7 +11,7 @@ import { Subject } from "./Subject";
 @Entity("rooms")
 export class Room {
   @PrimaryGeneratedColumn()
-  id: string;
+  id: number;
 
   @Column({ type: "text" })
   name: string;
