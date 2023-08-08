@@ -1,7 +1,9 @@
 import { Router } from "express";
 import { RoomController } from "../controllers";
+import { authMiddleware } from "../middlewares/authMiddleware";
 
 const router = Router();
+router.use(authMiddleware);
 router.post("/room", new RoomController().create);
 router.get("/rooms", new RoomController().list);
 router.post("/room/:idRoom/create", new RoomController().createVideo);
