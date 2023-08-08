@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
-import { roomRepository } from "../repositories/roomRepository";
-import { videoRepository } from "../repositories/videoRepository";
-import { subejctRepository } from "../repositories/subjectRepository";
+import {
+  roomRepository,
+  videoRepository,
+  subejctRepository,
+} from "../infra/repositories";
 import { BadRequestError, NotFoundError } from "../helpers/api-errors";
 
 export class RoomController {

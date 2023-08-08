@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { subejctRepository } from "../repositories/subjectRepository";
+import { subejctRepository } from "../infra/repositories";
 import { BadRequestError } from "../helpers/api-errors";
 
 export class SubjectController {
