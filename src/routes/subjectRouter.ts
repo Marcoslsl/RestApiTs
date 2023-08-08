@@ -4,6 +4,5 @@ import { authMiddleware } from "../middlewares/authMiddleware";
 
 const router = Router();
 
-router.use(authMiddleware);
-router.post("/subject", new SubjectController().create);
+router.post("/subject", authMiddleware, new SubjectController().create);
 export { router };
