@@ -1,5 +1,5 @@
 import express from "express";
-import { AppDataSource } from "./infra/data-sorce";
+import { AppDataSource } from "./infra/data-source";
 
 AppDataSource.initialize().then(() => {
   const app = express();
