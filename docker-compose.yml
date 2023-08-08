@@ -1,0 +1,25 @@
+version: "3"
+services:
+  db:
+    image: postgres:13
+    container_name: postgres-docker
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    ports:
+      - "5432:5432"
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: minha-aplicacao
+    restart: always
+    environment:
+      NODE_ENV: development
+    command: ["sh", "-c", "sleep 9 && npm run dev"]
+    depends_on:
+      - db
+    ports:
+      - 3001:3001

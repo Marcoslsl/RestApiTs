@@ -1,0 +1,13 @@
+// host if you run on locahost or with docker
+DB_HOST_DOCKER=
+DB_HOST=localhost
+
+DB_PORT=
+DB_USER=
+DB_PASS=
+DB_NAME=
+
+// Port you want express to run
+PORT=
+
+JWT_PASS=
