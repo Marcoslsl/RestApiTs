@@ -2,10 +2,13 @@
 DB_HOST_DOCKER=
 DB_HOST=localhost
 
+
 DB_PORT=
 DB_USER=
 DB_PASS=
 DB_NAME=
+DB_ROOT_PASS=
+
 
 // Port you want express to run
 PORT=

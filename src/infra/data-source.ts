@@ -3,7 +3,7 @@ import "dotenv/config";
 import "reflect-metadata";
 
 export const AppDataSource = new DataSource({
-  type: "postgres",
+  type: "mysql",
   host:
     process.env.NODE_ENV === "development"
       ? process.env.DB_HOST_DOCKER
