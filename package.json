@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "migration:generate": "typeorm-ts-node-esm migration:generate --dataSource ./src/infra/data-source.ts ./src/infra/migrations/default",
-    "migration:run": "typeorm-ts-node-esm migration:run --dataSource ./src/infra/data-source.ts"
+    "migration:run": "typeorm-ts-node-esm migration:run --dataSource ./src/infra/data-source.ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,8 @@
     "@types/jsonwebtoken": "^9.0.2",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.3"
   },
   "dependencies": {
     "@types/express": "^4.17.17",
@@ -30,6 +32,7 @@
     "nodemon": "^3.0.1",
     "pg": "^8.11.2",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.7"
+    "typeorm": "^0.3.7",
+    "vite": "^4.4.9"
   }
 }
